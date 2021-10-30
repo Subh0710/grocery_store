@@ -3,7 +3,6 @@ category = [{"1. Loreal": 65, "2. Pantene": 60, "3. Head & Shoulder": 75}, {"1. 
 cartItem = []
 cartPrice = []
 totalQuantity = []
-cart = {}
 amount = []
 stop = False
 try:
