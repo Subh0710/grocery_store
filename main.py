@@ -30,7 +30,7 @@ try:
             stop = False
         else:
             stop = True
-        print(list(zip(cartItem, totalQuantity, amount, cartPrice)),'Total: ₹%.2f' % sum(cartPrice))
+        print(list(zip(cartItem, totalQuantity, amount, cartPrice)), 'Total: ₹%.2f' % sum(cartPrice))
     print('Grant Total: ₹%.2f' % sum(cartPrice))
 except Exception as e:
     print(e)
