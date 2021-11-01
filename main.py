@@ -1,4 +1,4 @@
-product = {"1. Shampoo", "2. Toothpaste", "3. Soap"}
+product = ["Shampoo", "Toothpaste", "Soap"]
 category = [{"1. L'Oreal": 65, "2. Pantene": 60, "3. Head & Shoulder": 75}, {"1. Colgate": 45, "2. OralB": 75, "3. Close Up": 70}, {"1. Dove": 25, "2. Pears": 20, "3. Nivea": 30}]
 cartItem = []
 cartPrice = []
@@ -7,12 +7,12 @@ rate = []
 try:
     while True:
         print("Available Items:")
-        for productName in product:
-            print(productName)
+        for i, productName in enumerate(product):
+            print("%s. %s" % (i+1, productName))
         productInput = int(input("Select a product number from above list: "))
         productInput = productInput - 1
         for x, y in category[productInput].items():
-            print(str(x) + ': ' + str(y))
+            print(str(x) + " : " + str(y))
         x = category[productInput]
         item = list(x.keys())
         categoryInput = int(input("Select a category number from above list: "))
